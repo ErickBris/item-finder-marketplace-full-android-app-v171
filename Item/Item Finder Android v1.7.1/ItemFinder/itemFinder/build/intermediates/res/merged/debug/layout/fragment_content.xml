@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView24"
+            android:background="@drawable/line_segment_pattern"
+            android:layout_marginTop="@dimen/dimen_5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/latest_items"
+            android:textColor="@color/text_gray_color"
+            android:id="@+id/textView23"
+            android:layout_margin="@dimen/dimen_5dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView25"
+            android:background="@drawable/line_segment_pattern"
+            android:layout_marginTop="@dimen/dimen_2dp" />
+    </LinearLayout>
+
+    <com.etsy.android.grid.StaggeredGridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:item_margin="5dp"
+        app:column_count="@integer/column_count"
+        android:layout_marginTop="@dimen/dimen_5dp" />
+
+</LinearLayout>

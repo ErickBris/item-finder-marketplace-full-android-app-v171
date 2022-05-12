@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/mg/Documents/Projects/MG/Android/ItemFinder/itemFinder/build/intermediates/res/merged/debug/values-xhdpi-v4/values-xhdpi-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "/Users/mg/Documents/Projects/MG/Android/ItemFinder/itemFinder/build/intermediates/exploded-aar/ItemFinder/facebookSDK/unspecified/res/values-xhdpi-v4/values-xhdpi-v4.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 63,
+                        "endOffset": 114
+                    }
+                }
+            }
+        ]
+    }
+]

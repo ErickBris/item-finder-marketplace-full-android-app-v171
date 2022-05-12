@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:map="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/scrollView1"
+	android:fillViewport="true" >
+
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical" >
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/bg_add_image"
+			android:layout_marginBottom="@dimen/dimen_5dp">
+
+			<com.libraries.scroller.MGScroller
+				android:id="@+id/scrollerPhotos"
+				android:layout_width="match_parent"
+				android:layout_height="180dp">
+
+			</com.libraries.scroller.MGScroller>
+
+		</FrameLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="@dimen/dimen_5dp"
+			android:orientation="vertical" >
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/dimen_10dp"
+				android:orientation="vertical" >
+
+				<TextView
+					android:id="@+id/TextView07"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/title_item_name"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@color/text_gray_color" />
+
+				<EditText
+					android:id="@+id/txtItemName"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_5dp"
+					android:ems="10"
+					android:singleLine="true"
+					android:maxLines="@integer/num_new_lines_1"
+					android:background="@drawable/textbox_input"
+					android:hint="@string/hint_item_name" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/dimen_10dp"
+				android:orientation="vertical" >
+
+				<TextView
+					android:id="@+id/textView24"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/title_item_currency"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@color/text_gray_color" />
+
+				<EditText
+					android:id="@+id/txtItemCurrency"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_5dp"
+					android:ems="10"
+					android:singleLine="true"
+					android:maxLines="@integer/num_new_lines_1"
+					android:maxLength="@integer/char_length_3"
+					android:background="@drawable/textbox_input"
+					android:hint="@string/hint_item_currency" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/dimen_10dp"
+				android:orientation="vertical" >
+
+				<TextView
+					android:id="@+id/TextView05"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/title_item_price"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@color/text_gray_color" />
+
+				<EditText
+					android:id="@+id/txtItemPrice"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_5dp"
+					android:ems="10"
+					android:singleLine="true"
+					android:maxLines="@integer/num_new_lines_1"
+					android:maxLength="@integer/char_length_20"
+					android:background="@drawable/textbox_input"
+					android:hint="@string/hint_item_price"
+					android:inputType="numberDecimal" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_margin="@dimen/dimen_10dp">
+
+				<TextView
+					android:id="@+id/TextView04"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/title_category"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@color/text_gray_color" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:orientation="horizontal"
+					android:id="@+id/linearCategory">
+
+					<TextView
+						android:id="@+id/tvCategory"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:text="@string/select_category"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:textSize="@dimen/text_size_18sp"
+						android:layout_gravity="center"
+						android:gravity="center|left" />
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/imageView13"
+						android:src="@drawable/list_arrow"
+						android:layout_gravity="center" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/dimen_10dp"
+				android:orientation="vertical" >
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/title_item_type"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@color/text_gray_color" />
+
+				<RadioGroup
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal">
+
+					<RadioButton
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/new_item"
+						android:id="@+id/radioNew"
+						android:layout_gravity="center"
+						android:checked="true"
+						android:minWidth="100dp" />
+
+					<RadioButton
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/used"
+						android:id="@+id/radioUsed"
+						android:minWidth="100dp" />
+				</RadioGroup>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/dimen_10dp"
+				android:orientation="vertical" >
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/title_item_desc"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@color/text_gray_color" />
+
+				<EditText
+					android:id="@+id/txtItemDesc"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_5dp"
+					android:ems="10"
+					android:minLines="@integer/num_new_lines_8"
+					android:gravity="left|top"
+					android:hint="@string/item_desc"
+					android:padding="@dimen/dimen_5dp"
+					android:background="@drawable/textbox_input" />
+
+				<TextView
+					android:id="@+id/tvMaxCharCount"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="right"
+					android:layout_marginTop="@dimen/dimen_5dp"
+					android:text="Medium Text"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@color/text_gray_color" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_margin="@dimen/dimen_10dp">
+
+				<Button
+					android:id="@+id/btnSend"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dimen_55dp"
+					android:text="@string/send"
+					android:textSize="@dimen/text_size_20sp"
+					android:textStyle="bold"
+					android:background="@drawable/button_blue_selector"
+					android:textColor="@color/text_white_cloor" />
+
+				<Button
+					android:id="@+id/btnMarkSold"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dimen_55dp"
+					android:background="@drawable/button_red_selector"
+					android:text="@string/mark_as_sold"
+					android:textColor="@color/text_white_cloor"
+					android:textSize="@dimen/text_size_20sp"
+					android:textStyle="bold"
+					android:layout_marginTop="@dimen/dimen_30dp" />
+
+				<Button
+					android:id="@+id/btnUnPublish"
+					android:layout_width="match_parent"
+					android:layout_height="55dp"
+					android:background="@drawable/button_search_selector"
+					android:text="@string/unpublish_item"
+					android:textColor="@color/text_white_cloor"
+					android:textSize="@dimen/text_size_20sp"
+					android:textStyle="bold"
+					android:layout_marginTop="@dimen/dimen_20dp" />
+
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+
+	</LinearLayout>
+</ScrollView>

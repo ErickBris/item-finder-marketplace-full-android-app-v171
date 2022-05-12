@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imgViewCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slider_placeholder"/>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/click_to_add_edit"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_white_cloor"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </FrameLayout>
+
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/divider_blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <!-- <com.libraries.imageview.RoundedImageView
+                            android:id="@+id/imgViewThumb"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:scaleType="center"
+                            app:mutate_background="false"
+                            android:src="@drawable/profile_thumb_placeholder" /> -->
+
+                        <com.libraries.imageview.MGImageView
+                            android:id="@+id/imgViewThumb"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:scaleType="center"
+                            android:src="@drawable/profile_thumb_placeholder" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/click_to_add_edit"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/text_white_cloor"
+                            android:textSize="@dimen/text_size_12sp" />
+
+                    </FrameLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:id="@+id/linearPassword">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/password"
+                            android:textColor="@color/text_gray_color"
+                            android:id="@+id/textView6" />
+
+                        <EditText
+                            android:id="@+id/txtPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:background="@drawable/textbox_profile"
+                            android:hint="@string/password"
+                            android:inputType="textPassword" >
+                        </EditText>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/full_name"
+                    android:textColor="@color/text_gray_color"
+                    android:id="@+id/textView8" />
+
+                <EditText
+                    android:id="@+id/txtFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/textbox_profile"
+                    android:ems="10"
+                    android:hint="@string/full_name"
+                    android:layout_marginTop="@dimen/dimen_10dp">
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/phone_no"
+                    android:textColor="@color/text_gray_color"
+                    android:id="@+id/textView10"
+                    android:layout_marginTop="@dimen/dimen_10dp" />
+
+                <EditText
+                    android:id="@+id/txtPhoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:background="@drawable/textbox_profile"
+                    android:ems="10"
+                    android:hint="@string/phone_no"
+                    android:digits="0123456789+ "
+                    android:maxLength="15"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/sms_no"
+                    android:textColor="@color/text_gray_color"
+                    android:id="@+id/textView16"
+                    android:layout_marginTop="@dimen/dimen_10dp" />
+
+                <EditText
+                    android:id="@+id/txtSMSNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:background="@drawable/textbox_profile"
+                    android:ems="10"
+                    android:hint="@string/sms_no"
+                    android:digits="0123456789+ "
+                    android:maxLength="15"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_weight="1"
+                    android:text="@string/editing_fields"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/theme_black_color" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@drawable/button_blue_selector"
+                android:text="@string/update_profile"
+                android:textColor="@color/text_white_cloor"
+                android:textSize="@dimen/text_size_20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_20dp" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@drawable/button_red_selector"
+                android:text="@string/logout"
+                android:textColor="@color/text_white_cloor"
+                android:textSize="@dimen/text_size_20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

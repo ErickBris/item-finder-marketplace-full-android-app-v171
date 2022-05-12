@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projects.itemfinder">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:screenOrientation="sensorPortrait"
+
+            android:name="com.projects.itemfinder.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.projects.activities.MyItemsActivity"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.projects.activities.SellerActivity"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.projects.activities.NewItemActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.projects.activities.EditItemActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.projects.activities.ItemsActivity"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.projects.activities.SubCategoryActivity"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.projects.activities.CategorySelectionActivity"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.projects.activities.DetailItemActivity"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.projects.activities.ProfileActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/app_name" />
+        
+        <activity android:name="com.projects.activities.RegisterActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/app_name" />
+        
+        <activity android:name="com.projects.activities.LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.projects.activities.NewReviewActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/app_name" />
+        
+        <activity android:name="com.projects.activities.ImageViewerActivity"
+            android:label="@string/app_name" />
+        
+        <activity android:name="com.projects.activities.NewsDetailActivity"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.projects.activities.SearchResultActivity"
+            android:label="@string/app_name" />
+        
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+        <meta-data
+		    android:name="com.google.android.maps.v2.API_KEY"
+		    android:value= "AIzaSyAzcEGm4HyahpWl0vcocgU5YQGGCFsKldY" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id"/>
+
+        <provider
+            android:authorities="com.facebook.app.NativeAppCallContentProvider1661621287387635"
+            android:name="com.facebook.NativeAppCallContentProvider"
+            android:exported="true"/>
+
+        <receiver android:name="com.libraries.receiver.ItemFinderBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.platform.AppCallResultBroadcast" />
+            </intent-filter>
+        </receiver>
+        
+    </application>
+
+</manifest>

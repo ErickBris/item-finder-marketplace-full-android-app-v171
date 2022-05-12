@@ -1,0 +1,43 @@
+————————————————————————————————————————————
+V1.7.1
+————————————————————————————————————————————
+PHP Backend adjustments.
+Search adjustments.
+
+————————————————————————————————————————————
+V1.7
+————————————————————————————————————————————
+Smart fetch of data. Now it shows nearby items only. If Items are too far
+from the user, it will get maximum of 20 stores or more (Editable in Config.h)
+And show to the user.
+Settings changed to adjust slider for radius to input box for dynamic and easy changing.
+AdMob SDK updated.
+
+————————————————————————————————————————————
+V1.0
+————————————————————————————————————————————
+Android App
+
+Localization Ready!
+INFINITE SUBCATEGORIES
+Image BLUR
+Offline Usage
+User Reviews
+Promotions
+User Profile
+Social Login (Twitter/Facebook/Web)
+AdMob
+Cool Mobile UI Interaction
+Waterfall Collection View display on items.
+Share to Facebook
+Share to Twitter
+Call Integration
+Email Integration
+SMS Integration
+User can add Item to Favorites.
+Advance Search
+About Us Panel Added
+Terms & Conditions Panel Added
+User can edit its Profile
+Image Pinch and Zoom
+Supports small and large screen displays.

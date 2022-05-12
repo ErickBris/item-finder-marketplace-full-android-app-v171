@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/mg/Documents/Projects/MG/Android/ItemFinder/facebookSDK/src/main/assets"/><source path="/Users/mg/Documents/Projects/MG/Android/ItemFinder/facebookSDK/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/mg/Documents/Projects/MG/Android/ItemFinder/facebookSDK/src/debug/assets"/></dataSet></merger>
